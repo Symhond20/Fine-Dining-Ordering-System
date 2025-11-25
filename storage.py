@@ -76,7 +76,7 @@ class SystemDB:
                         FOREIGN KEY (courseID) REFERENCES Courses(id) 
                     ) 
                 """)
-            
+        
             self.connection.commit()
             print("Table is successfully created.")
             
@@ -105,7 +105,7 @@ class SystemDB:
             if not result:
                 self.cursor.execute("INSERT INTO restaurant_table(table_number, capacity, description) VALUES(%s,%s,%s)", (table_num, capacity, description,))
         self.connection.commit()
-      
+    
     def closeDB(self):
         try:
             if self.cursor is not None:

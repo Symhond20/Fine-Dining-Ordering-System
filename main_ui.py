@@ -1,8 +1,9 @@
 from tkinter import * 
 from reservation_page import ReservationPage
+from menu_gui import MenuGui
 
 window = Tk()
-window.geometry("1800x800")
+window.geometry("1700x800")
 window.title("Restaurant Ordering System")
 
 class SidebarMenu:
@@ -192,10 +193,11 @@ class SidebarMenu:
         for widgets in self.page_frame.winfo_children():
             widgets.destroy()
 
-        #try:
-            #MenuPage(self.page_frame)
-        #except Exception as e:
-            #print(f"Error: Loading HomaPage: {e}")
+        try:
+            MenuGui(self.page_frame)
+        except Exception as e:
+            print(f"Error: Loading HomePage: {e}")
+
 
     def reportPage(self):
         for widgets in self.page_frame.winfo_children():
