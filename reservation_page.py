@@ -90,11 +90,11 @@ class ReservationPage:
 
         # Table buttons
         self.all_btn = Button(self.table_header, text= "All Tables",
-                              relief= RIDGE)
+                              relief= RIDGE, height= 1, width= 10)
         self.all_btn.pack(side= RIGHT, pady= (0, 5), padx= (10, 15))
 
         self.filtered_btn = Button(self.table_header, text= "Match Tables", 
-                                   relief= RIDGE)
+                                   relief= RIDGE, height= 1, width= 10)
         self.filtered_btn.pack(side= RIGHT, pady= (0, 5), padx= 10)
 
         self.add_icon = PhotoImage(file="icons/add.png")
