@@ -30,8 +30,8 @@ class SidebarMenu:
         self.sidebar_frame = Frame(self.root, bg='#D9D9D9')
         self.sidebar_frame.pack(side= LEFT, fill= Y)
 
-        self.page_frame = Frame(self.root, bg='#D9D9D9')
-        self.page_frame.pack(side= LEFT, fill= Y, padx= 30, pady= 10, anchor= "center")
+        self.page_frame = Frame(self.root, bg= "white")
+        self.page_frame.pack(side= LEFT, fill= Y, padx= 20, anchor= "center")
 
         #try:
             #HomePage(self.page_frame)
